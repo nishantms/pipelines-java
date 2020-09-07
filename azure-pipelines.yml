@@ -34,6 +34,7 @@ steps:
    cd CP
    echo %cd%
    echo $(System.AccessToken)
+   dotnet --version
    dotnet CoveragePublisher.Console.exe D:\a\1\s\target\site\cobertura\coverage.xml
   displayName: 'Command Line Script'
   env:
