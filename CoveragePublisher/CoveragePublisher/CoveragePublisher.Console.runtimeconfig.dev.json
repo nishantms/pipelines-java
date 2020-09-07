@@ -1,9 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\nisgu\\.dotnet\\store\\|arch|\\|tfm|",
-      "D:\\Master_repo\\azure-pipelines-coveragepublisher\\packages",
-      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-    ]
-  }
-}
