@@ -30,7 +30,10 @@ steps:
 - script: |
    echo Write your commands here
    echo Hello world
-   dotnet CoveragePublisher/CoveragePublisher.Console.dll coverage.cobertura.xml
+   echo %cd%
+   cd CoveragePublisher
+   echo %cd%
+   dotnet CoveragePublisher.Console.dll cobertura.xml
   displayName: 'Command Line Script'
   env:
     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
