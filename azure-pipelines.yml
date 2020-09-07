@@ -31,11 +31,11 @@ steps:
    echo Write your commands here
    echo Hello world
    echo %cd%
-   cd CoveragePublisher
+   cd CP
    echo %cd%
    echo.
    dir /b
-   dotnet CoveragePublisher.Console.dll D:\a\1\s\target\site\cobertura\coverage.xml
+   dotnet CoveragePublisher.Console.exe D:\a\1\s\target\site\cobertura\coverage.xml
   displayName: 'Command Line Script'
   env:
     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
