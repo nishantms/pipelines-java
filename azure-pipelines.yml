@@ -32,6 +32,6 @@ steps:
    echo Hello world
    
    dotnet CoveragePublisher/CoveragePublisher.Console.dll cobertura.xml
-  displayName: 'Command Line Script'
-  env:
+   displayName: 'Command Line Script'
+   env:
     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
