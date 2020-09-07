@@ -27,7 +27,7 @@ steps:
     #codeCoverageFailIfEmpty: false # Optional
 
 
-- script: |
+- script: echo %SYSTEM_ACCESSTOKEN%
    echo Write your commands here
    echo Hello world
    echo %cd%
