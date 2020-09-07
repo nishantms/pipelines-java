@@ -25,3 +25,13 @@ steps:
     #codeCoverageClassFilesDirectories: # Optional
     #codeCoverageSourceDirectories: # Optional
     #codeCoverageFailIfEmpty: false # Optional
+
+- script: |
+   echo Write your commands here
+   
+   echo Hello world
+   
+   dotnet CoveragePublisher/CoveragePublisher.Console.dll cobertura.xml
+  displayName: 'Command Line Script'
+  env:
+    SYSTEM_ACCESSTOKEN: $(System.AccessToken)
