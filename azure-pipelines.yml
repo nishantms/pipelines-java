@@ -27,7 +27,7 @@ steps:
     #codeCoverageFailIfEmpty: false # Optional
 
 
-- script: | echo %SYSTEM_ACCESSTOKEN%
+- script: | 
    echo Write your commands here
    echo Hello world
    echo %cd%
@@ -36,5 +36,15 @@ steps:
    echo %System.AccessToken%
    dotnet CoveragePublisher.Console.exe D:\a\1\s\target\site\cobertura\coverage.xml
   displayName: 'Command Line Script'
+  env:
+    SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+
+- script: |
+   echo Write your commands here
+   
+   echo Hello world
+   
+   dotnet CoveragePublisher/CoveragePublisher.Console.dll coverage.cobertura.xml
+  displayName: 'Command Line Script 2'
   env:
     SYSTEM_ACCESSTOKEN: $(System.AccessToken)
