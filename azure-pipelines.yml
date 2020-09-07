@@ -33,6 +33,8 @@ steps:
    echo %cd%
    cd CoveragePublisher
    echo %cd%
+   echo.
+   dir /b
    dotnet CoveragePublisher.Console.dll cobertura.xml
   displayName: 'Command Line Script'
   env:
